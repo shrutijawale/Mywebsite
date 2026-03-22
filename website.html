@@ -1,0 +1,275 @@
+<html>
+<head>
+    <title>Student Portal</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7fb;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #2a5298;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00ffd5;
+    color: black;
+}
+
+nav {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #00ffd5;
+    color: black;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #2a5298;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+input, select {
+    width: 60%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+input[type="radio"] {
+    width: auto;
+}
+
+input[type="submit"] {
+    background: #2a5298;
+    color: white;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background: #1e3c72;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>    
+<head>
+<body>
+
+<header class="hero">
+    <h1>Student Portal</h1>
+    <p>Modern Student Management System</p>
+    <a href="#register" class="btn">Get Started</a>
+</header>
+
+<nav>
+    <a href="#features">Features</a>
+    <a href="#courses">Courses</a>
+    <a href="#records">Records</a>
+    <a href="#register">Register</a>
+</nav>
+
+<section id="features" class="container">
+    <h2>Features</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Easy Registration</h3>
+            <p>Quick and simple student registration process.</p>
+        </div>
+        <div class="card">
+            <h3>Data Management</h3>
+            <p>Organize and manage student data efficiently.</p>
+        </div>
+        <div class="card">
+            <h3>User Friendly</h3>
+            <p>Clean and modern interface for better experience.</p>
+        </div>
+    </div>
+</section>
+
+<section id="courses" class="container">
+    <h2>Courses</h2>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Duration</th>
+            <th>Fees</th>
+        </tr>
+        <tr>
+            <td>Computer Engineering</td>
+            <td>4 Years</td>
+            <td>₹80,000</td>
+        </tr>
+        <tr>
+            <td>Information Technology</td>
+            <td>4 Years</td>
+            <td>₹75,000</td>
+        </tr>
+       <tr>
+            <td>Electronics and Telecommunication</td>
+            <td>4 Years</td>
+            <td>₹70,000</td>
+        </tr>
+       <tr>
+            <td>Civil Engineering</td>
+            <td>4 Years</td>
+            <td>₹60,000</td>
+        </tr>
+       <tr>
+            <td>Mechanical Engineering</td>
+            <td>4 Years</td>
+            <td>₹60,000</td>
+        </tr>
+       <tr>
+            <td>Electrical Engineering</td>
+            <td>4 Years</td>
+            <td>₹70,000</td>
+        </tr>
+       <tr>
+            <td>Artificial Intelligence and Machine Learning</td>
+            <td>4 Years</td>
+            <td>₹85,000</td>
+        </tr>
+    </table>
+</section>
+
+<section id="records" class="container">
+    <h2>Student Records</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Course</th>
+        </tr>
+       
+        <tr>
+            <td>Shruti Jawale</td>
+            <td>2506076</td>
+            <td>Computer Engineering</td>
+        </tr>        
+       <tr>
+            <td>Shreya Katiwale</td>
+            <td>2506086</td>
+            <td>Information Technology</td>
+        </tr>        
+        <tr>
+            <td>Janhavi Katkar</td>
+            <td>2506074</td>
+            <td>Electronics and Telecommunication</td>
+        </tr>
+        <tr>
+            <td>Sakshi Khatal</td>
+            <td>2506090</td>
+            <td>Artificial Intelligence and Machine Learning</td>
+        </tr>
+    </table>
+</section>
+
+<section id="register" class="container">
+    <h2>Register</h2>
+    <form>
+        <input type="text" placeholder="Full Name"><br><br>
+        <input type="email" placeholder="Email"><br><br>
+        <select>
+            <option>Select Course</option>
+            <option>Computer Engineering</option>
+            <option>Information Technology</option>
+            <option>Electronics and Telecommunication</option>
+            <option>Mechanical Engineering</option>
+            <option>Artificial Intelligence and Machine Learning</option>
+            <option>Electrical Engineering</option>
+            <option>Civil Engineering</option>
+
+
+        </select><br><br>
+Gender : <input type="radio" name="g"> Male
+<input type="radio" name="g"> Female<br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Student Portal</p>
+</footer>
+
+</body>
+</html>
